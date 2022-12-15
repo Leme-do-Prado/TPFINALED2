@@ -1,4 +1,18 @@
+using System.Collections.Generic;  
+
 public Produto{
-    private TipoProduto tipo;
-    private bool itemState;
+    public int idProduto;
+    public bool itemState = false;
+
+    Produto(int id){
+        this.idProduto = id;
+    }
+
+    public void mudaEstadoProduto(){
+        if(this.itemState == false){
+            this.itemState == true;
+        } else{
+            this.itemState=false;
+        }
+    }
 }
