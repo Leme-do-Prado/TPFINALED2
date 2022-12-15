@@ -1,3 +1,16 @@
-public Estoque{
-    private Queue<Produto> produtos;
-}
+public static Estoque{
+    public Queue<TipoProduto> tiposProduto;
+
+    public void enfileiraTipoProduto(TipoProduto tipo){
+        this.tiposProduto.Enqueue(tipo);
+    }
+
+    public static void mostraFilaProduto(){
+        int i = 0;
+        foreach(TipoProduto tipo in tiposProduto)
+            {
+                i++;
+                Console.WriteLine(i, + "º: ", + tipo.ToString());
+            }
+        Console.WriteLine("---------------");
+    }
