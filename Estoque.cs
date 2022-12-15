@@ -14,3 +14,11 @@ public static Estoque{
             }
         Console.WriteLine("---------------");
     }
+
+    public TipoProduto procuraTipoProduto(int idtp){
+    for (int i=0; i< tiposProduto.Count; i++) {
+    if (tiposProduto[i].id == idp) {
+        return qtProdutosTipoProduto[i];
+    break;
+    }
+}
